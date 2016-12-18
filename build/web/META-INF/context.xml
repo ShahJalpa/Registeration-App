@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Final_Project">
+
+<!--  JavaDB client connection on localhost
+      with apache_derby_net driver: derbyclient.jar and derby.jar
+-->
+    <Resource name="jdbc/MayaUser" auth="Container"
+        driverClassName="org.apache.derby.jdbc.ClientDriver"
+        url="jdbc:derby://localhost:1527/MayaUser"
+        username="jalpa" password="maya"
+        maxActive="100" maxIdle="30" maxWait="10000"
+        logAbandoned="true" removeAbandoned="true"
+        removeAbandonedTimeout="60" type="javax.sql.DataSource" />
+</Context>
